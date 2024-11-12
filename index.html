@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🤖Aesthetic Chatbot</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+        <div class="chatbot">
+            <div class="chatbot-header">
+                <h3> GEGM BOT</h3>
+                <p>L'assistant intelligent pour t'accompagner dans ta filière</p>
+            </div>
+            <div class="chatbot-messages" id="chatbotMessages">
+                <div class="message-container bot-container">
+                    <div class="bot-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
+                        </svg>
+                    </div>
+                    <div class="message bot">
+                        <p>Bonjour, comment je peux vous aider ?</p>
+                    </div>
+                </div>
+            </div>
+    <div class="question-buttons">
+      <label for="questions">Choisissez une question :</label>
+      <select id="questions" onchange="askQuestion(this.value)" size="5" style="width: 100%;">
+        <option value="Qu'est-ce que le génie mécanique et électrique ? Et quels sont les sujets qui intègrent ces deux domaines ?">
+          Qu'est-ce que le génie mécanique et électrique ? Et quels sont les sujets qui intègrent ces deux domaines ?
+        </option>
+        <option value="En quoi le génie mécanique et électrique est-il différent des autres spécialités d'ingénierie ?">
+          En quoi le génie mécanique et électrique est-il différent des autres spécialités d'ingénierie ?
+        </option>
+        <option value="Quelles sont les matières principales que j'étudierai dans cette spécialité ?">
+          Quelles sont les matières principales que j'étudierai dans cette spécialité ?
+        </option>
+        <option value="Quelles sont les compétences techniques que je dois acquérir dans ce domaine ?">
+          Quelles sont les compétences techniques que je dois acquérir dans ce domaine ?
+        </option>
+        <option value="Est-ce que j'aurai besoin d'apprendre la programmation ou de maîtriser certains logiciels spécifiques ?">
+          Est-ce que j'aurai besoin d'apprendre la programmation ou de maîtriser certains logiciels spécifiques ?
+        </option>
+        <!-- Ajoutez d'autres questions ici -->
+        <option value="Quels sont les défis académiques auxquels font face les étudiants de cette spécialité ?">
+          Quels sont les défis académiques auxquels font face les étudiants de cette spécialité ?
+        </option>
+        <option value="Quelles sont les applications pratiques sur lesquelles je pourrais travailler en tant qu'étudiant ?">
+          Quelles sont les applications pratiques sur lesquelles je pourrais travailler en tant qu'étudiant ?
+        </option>
+        <option value="Aurai-je l'opportunité de travailler sur des projets réels pendant mes études ?">
+          Aurai-je l'opportunité de travailler sur des projets réels pendant mes études ?
+        </option>
+        <option value="Comment les connaissances acquises dans cette spécialité sont-elles appliquées dans le monde professionnel ?">
+          Comment les connaissances acquises dans cette spécialité sont-elles appliquées dans le monde professionnel ?
+        </option>
+        <option value="Quels types d'emplois puis-je obtenir après l'obtention de mon diplôme ?">
+          Quels types d'emplois puis-je obtenir après l'obtention de mon diplôme ?
+        </option>
+        <option value="Quels sont les secteurs ou domaines qui nécessitent cette spécialité ?">
+          Quels sont les secteurs ou domaines qui nécessitent cette spécialité ?
+        </option>
+        <option value="Existe-t-il des opportunités d'emploi dans mon pays ou à l'étranger pour cette spécialité ?">
+          Existe-t-il des opportunités d'emploi dans mon pays ou à l'étranger pour cette spécialité ?
+        </option>
+        <option value="Y a-t-il des programmes de stage d'été ou des opportunités de formation pratique dans cette spécialité ?">
+          Y a-t-il des programmes de stage d'été ou des opportunités de formation pratique dans cette spécialité ?
+        </option>
+        <option value="Devrais-je participer à des formations supplémentaires ou à des ateliers pendant mes études ?">
+          Devrais-je participer à des formations supplémentaires ou à des ateliers pendant mes études ?
+        </option>
+        <option value="Comment puis-je me préparer au marché du travail dans ce domaine ?">
+          Comment puis-je me préparer au marché du travail dans ce domaine ?
+        </option>
+        <option value="Y a-t-il des possibilités de recherche ou d'innovation dans cette spécialité ?">
+          Y a-t-il des possibilités de recherche ou d'innovation dans cette spécialité ?
+        </option>
+        <option value="Comment puis-je m'impliquer dans la recherche ou les projets de développement dans mon domaine ?">
+          Comment puis-je m'impliquer dans la recherche ou les projets de développement dans mon domaine ?
+        </option>
+        <option value="Quelles sont les nouvelles tendances dans le génie mécanique et électrique dont je devrais être informé ?">
+          Quelles sont les nouvelles tendances dans le génie mécanique et électrique dont je devrais être informé ?
+        </option>
+        <option value="Existe-t-il des certifications professionnelles ou des formations spécialisées qui augmentent les chances d'emploi ?">
+          Existe-t-il des certifications professionnelles ou des formations spécialisées qui augmentent les chances d'emploi ?
+        </option>
+        <option value="Quels sont les cours ou les sous-domaines dans lesquels je peux me spécialiser après mon diplôme ?">
+          Quels sont les cours ou les sous-domaines dans lesquels je peux me spécialiser après mon diplôme ?
+        </option>
+      </select>
+    </div>
+  </div>
+</div>
+<img src="bot.png" alt="Robot cartoon" height="500px">
+
+  <script src="script.js"></script>
+</body>
+</html>
